@@ -1,0 +1,18 @@
+.header {
+    width: 20%;
+    background-color: #fff;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 78%;
+}
+
+.header>span {
+    font-size: 23px;
+    font-weight: 500;
+   color: inherit;
+    cursor: pointer;
+}
