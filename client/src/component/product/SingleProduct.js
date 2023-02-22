@@ -14,7 +14,7 @@ const SingleProduct = () => {
     useEffect(() => {
         dispatch(getProductById(productId))
 
-    }, [dispatch, selectedProduct])
+    }, [dispatch])
 
 
     //authenticated

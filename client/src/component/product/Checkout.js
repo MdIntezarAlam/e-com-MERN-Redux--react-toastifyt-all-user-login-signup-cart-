@@ -8,6 +8,7 @@ const Checkout = () => {
 
   const { selectedProduct } = useSelector((state) => state.getProductReducer)
 
+
   return (
     <div className='check'>
       <div className='chck_box'>

@@ -39,7 +39,27 @@ export const userSignup = async (req, res) => {
         })
     }
 }
+
+
+//get all user
+export const getUser = async (req, res) => {
+    try {
+        const user = await User.find({})
+        if (user) {
+            return res.status(200).json({
+                success: true,
+                user
+            })
+        }
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: error.message
+        })
+    }
+}
 //login user
+
 
 export const userLogin = async (req, res) => {
     try {
